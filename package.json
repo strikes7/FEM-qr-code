@@ -10,7 +10,7 @@
         "watch:img": "onchange src/html/**/*.html -- npm run copy:img",
         "watch:sass": "sass --watch --no-source-map src/sass:public/css",
         "watch:html": "onchange src/html/**/*.html -- npm run copy:html",
-        "server":"browser-sync start  -s 'public' -f 'public' --no-open --reload-delay 50 --no-ui --no-inject-changes",
+        "server":"browser-sync start  -s '.' -f '.' --no-open --reload-delay 50 --no-ui --no-inject-changes",
         "start":"npm-run-all --parallel server watch:sass watch:html ",
         "build":"npm-run-all --parallel copy:img copy:sass copy:html"
     },

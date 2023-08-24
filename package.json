@@ -4,9 +4,9 @@
     "description": "just a playground",
     "main": "index.js",
     "scripts": {      
-        "copy:img": "copyfiles --up 1 src/img/**/*.{png,jpg,jpge} public",
-        "copy:sass": "sass --no-source-map src/sass:public/css",
-        "copy:html": "copyfiles --up 2 src/html/**/*.html public",
+        "copy:img": "copyfiles --up 1 src/img/**/*.{png,jpg,jpge} .",
+        "copy:sass": "sass --no-source-map src/sass:/css .",
+        "copy:html": "copyfiles --up 2 src/html/**/*.html .",
         "watch:img": "onchange src/html/**/*.html -- npm run copy:img",
         "watch:sass": "sass --watch --no-source-map src/sass:public/css",
         "watch:html": "onchange src/html/**/*.html -- npm run copy:html",

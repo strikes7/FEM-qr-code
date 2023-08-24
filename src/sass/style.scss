@@ -1,0 +1,38 @@
+@use "vars";
+
+body {
+  background-color: vars.$clr-bg-primary;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "outfit", sans-serif;
+  min-height: 100vh;
+}
+
+.qr-code {
+  box-sizing: border-box;
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: vars.$clr-bg-secondary;
+  &__code {
+    width: 100%;
+    display: block;
+    border-radius: 0.5rem;
+  }
+  &__title {
+    margin: 1.75rem 1.25rem 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__text {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: vars.$clr-font-text;
+    margin-inline: 1.25rem;
+    text-align: center;
+    margin-block-end: 1.6875rem;
+  }
+}
